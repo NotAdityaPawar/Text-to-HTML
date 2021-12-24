@@ -16,7 +16,9 @@ Including another URLconf
 
 
 from django.urls import path,include
+from .views import NormalTextView
+
 
 urlpatterns = [
-
+    path('',NormalTextView.as_view()),
 ]

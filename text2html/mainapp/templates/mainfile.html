@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+<h1>this is the sample content</h1>
+{% block page_content %}
+{% for content in object_list %}
+    {{ content.content | safe }}
+{% endfor %}
+{% endblock %}
